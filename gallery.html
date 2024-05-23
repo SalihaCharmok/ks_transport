@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/gallery.css">
+    
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <header>
+        <nav class="navbar">
+            <!-- <a href="#" class="nav-branding">Dev.</a> -->
+            <img src="images/1_logo.png" alt="black and white Logo of KS Transport with the letters K & S">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="form.html" class="nav-link">Offerten Anfrage</a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link">Galerie</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about_us.html" class="nav-link">Über uns</a>
+                </li>
+               
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <div class="hero">
+            <img  src="images/1_hero.jpg" alt="black and white hero picture of a dodge durango with a porsche on the trailer">
+            </div>
+    </header>
+    <!-- GALLERY -->
+    <div class="text-content">
+        <h2>Gallerie</h2>
+        <p>Bei uns gilt Diskretion als selbstverständlich, deshalb finden Sie angeführt nur Beispiele von Transporten, die durch K&S Transport durchgeführt wurden.</p>
+    
+    </div>
+    <div class="gallery">
+        <section class="image1">
+                <img height="400" src="images/1_galerie.jpg" alt="a grey porsche 911 on the trailer of K&S Transport">    
+        </section>
+            
+        <section class="image2">
+                <img height="400" src="images/2_galerie.jpg" alt="black rolls royce on the trailer of K&S Transport">
+        </section>
+            
+        <section class="image3">
+                <img height="400" src="images/3_galerie.jpg" alt="a red Ferrari 512 Testarossa on the trailer of K&S Transport">
+        </section>
+            
+        <section class="image4">
+                <img height="400" src="images/4_galerie.jpg" alt="red Ferrari F1 on the Trailer of K&S Transport ">
+        </section>
+            
+        <section class="image5">
+                <img height="400" src="images/5_galerie.jpg" alt="old blue porsche 911 on the trailer of K&S transport">
+        </section>
+            
+        <section class="image6">
+                <img height="400" src="images/6_galerie.jpg" alt="black Lamborghini Huracan on the trailer of K&S Transport ">
+        </section>
+            
+        <section class="image7">
+                <img height="400" src="images/7_galerie.jpg" alt="black Cadillac of K&S Transport with a white Cadillac on the trailer">
+        </section> 
+            
+    </div>
+
+        <!-- Carousel Review -->
+    <div class="title">
+        <h2>Unsere Kundenbewertungen</h2>
+    </div>
+    <div class="reviews">
+        <div class="panel">
+            <img width="150" src="images/first_review_photo.jpg" alt="lächelnder Mann mit blonden Haaren und grauem Pullover Portrait Bild">
+            <p>Die Autotransportfirma hat unsere Import Anforderungen problemlos bewältigt. Die Fahrzeuge kamen in einwandfreiem Zustand an, und der gesamte Prozess verlief reibungslos. Eine verlässliche Wahl für europaweite Autotransporte.</p>
+            <h6>Max Muster</h6>
+        </div>
+        <!-- <div class="panel">
+            <img width="150" src="images/second_review_photo.jpg" alt="Mann mit weissem Shirt und Meer im Hintergrung">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam laborum architecto dolor at sint eius vero ea mollitia quisquam, sequi, delectus laudantium magni vitae dolores iste minima quidem? Quod totam rerum magni dicta, ad fugit repudiandae. Hic quis blanditiis officiis!</p>
+            <h6>Andreas Köhler</h6>
+        </div>
+        <div class="panel">
+            <img width="150" src="images/third_review_photo.jpg" alt="Junger Mann mit schwarzem Shirt">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima tenetur architecto officia fugiat id incidunt corporis, facilis itaque. Nemo, voluptates!</p>
+            <h6>Ralf Frey</h6>
+        </div> -->
+    </div>
+
+        <section class="cta">
+            <h2>Holen Sie jetzt Ihre Offerte ein.</h2>
+            <button class="button">
+            <a href="form.html">JETZT ANFRAGEN</a>
+            </button>
+        </section>
+    
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+        <div class="K&S-Transport">
+            <h3>K&S Transport</h3>
+            <p>Industriestrasse 173a</p>
+            <p>8957 Spreitenbach</p>
+            <p>+41 76 412 98 97</p>
+            <p>info@ks-transport.ch</p>
+        </div>
+
+        <div class="Openings">
+            <h3>Unsere Öffnungszeiten</h3>
+            <p>Montag - Freitag</p>
+            <p>08.00 - 12.00</p>
+            <p>13.00 - 18.00</p>
+            <p>Samstag - Sonntag</p>
+            <p>Geschlossen</p>
+        </div>
+
+        <div class="Rights">
+            <a href="#"><small>AGB</small></a>
+            <a href="#"><small>Datenschutz</small></a>
+            <a href="#"><small>Impressum</small></a>
+            
+        </div>
+    </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }));
+    </script>
+</body>
+</html>

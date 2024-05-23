@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offerten Anfrage</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <!-- <a href="#" class="nav-branding">Dev.</a> -->
+            <img src="images/1_logo.png" alt="black and white Logo of KS Transport with the letters K & S">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="form.html" class="nav-link">Offerten Anfrage</a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link">Galerie</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about_us.html" class="nav-link">Über uns</a>
+                </li>
+               
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <div class="hero-text">
+            <h1>Individuelle Lösungen für Ihren Fahrzeugtransport</h1>
+            <h2>Erhalten Sie jetzt Ihr maßgeschneidertes Angebot!</h2>
+            </div>
+    </header>
+
+    <div class="form-container">
+        <div class="form">
+            <!-- left-side -->
+        <div class="left-side">
+            <div class="step-content">
+                <h2>Schritt 1</h2>
+                <p>Bitte geben Sie die Informationen zu ihrem Fahrzeug an.</p>
+
+                <!-- <h2>Schritt 2</h2>
+                <p>Bitte geben Sie die Informationen zum gewünschten Transport an.</p>
+
+                <h2>Schritt 3</h2>
+                <p>Bitte geben Sie Ihre Persönlichen Angaben an, damit wir Sie kontaktieren können.</p> -->
+            </div>
+                <ul class="progressbar">
+                    <a href="#">Fahrzeug Informationen</a>
+                    <a href="#">Transport Informationen</a>
+                    <a href="#">Persönliche Angaben</a>
+                </ul>
+        </div> 
+            <!-- right-side -->
+        <div class="right-side">
+            <div class="step-one"> 
+                <h2>Informationen zu Ihrem Fahrzeug</h2>
+                
+                <div class="input-text">
+                    <div class="input-div">
+                        <input type="text" placeholder="Marke">
+                    </div>
+
+                    <div class="input-div"> 
+                        <input type="text" placeholder="Model">
+                    </div>
+                </div>
+                <div class="input-text">
+                    <div class="input-div">
+                        <input type="text" placeholder="Jahrgang">
+                    </div>
+                    <div class="input-div">
+                        <input type="text" placeholder="Bemerkungen">
+                    </div>
+                </div>
+                
+                <div class="buttons">
+                    <button class="next-button">Weiter</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+        <div class="K&S-Transport">
+            <h3>K&S Transport</h3>
+            <p>Industriestrasse 173a</p>
+            <p>8957 Spreitenbach</p>
+            <p>+41 76 412 98 97</p>
+            <p>info@ks-transport.ch</p>
+        </div>
+
+        <div class="Openings">
+            <h3>Unsere Öffnungszeiten</h3>
+            <p>Montag - Freitag</p>
+            <p>08.00 - 12.00</p>
+            <p>13.00 - 18.00</p>
+            <p>Samstag - Sonntag</p>
+            <p>Geschlossen</p>
+        </div>
+
+        <div class="Rights">
+            <a href="#"><small>AGB</small></a>
+            <a href="#"><small>Datenschutz</small></a>
+            <a href="#"><small>Impressum</small></a>
+            
+        </div>
+    </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }));
+    </script>
+</body>
+</html>

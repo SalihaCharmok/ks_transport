@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="/css/about_us.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="images/1_logo.png" alt="black and white Logo of KS Transport with the letters K & S">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="form.html" class="nav-link">Offerten Anfrage</a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link">Galerie</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about_us.html" class="nav-link">Über uns</a>
+                </li>
+               
+            </ul>
+            <div class="hamburger" aria-label="Burger Menu - Secondary Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <!-- <div class="hero">
+            <img  src="images/1_hero.jpg" alt="black and white hero picture of a dodge durango with a porsche on the trailer">
+            </div> -->
+    </header>
+
+    <div class="aboutus">
+        <h2>Willkommen bei K&S Transport!</h2>
+        <p>Wir sind ein Autotransportunternehmen, das 2022 von einem leidenschaftlichen Einzelunternehmer in der Schweiz gegründet wurde. Seit unserer Gründung haben wir uns darauf konzentriert, hochwertige Autotransporte in der Schweiz und ganz Europa anzubieten.</p>
+    </div>
+
+    <div class="ks-values">
+        <h2>Unsere Unternehmenswerte</h2>
+        <p>Diese Werte bilden das Fundament von K&S Transport und leiten unser Handeln in allen Aspekten unseres Geschäfts.</p>
+    </div>
+
+    <section class="values">
+        <div class="mission">
+            <h2>Zuverlässigkeit</h2>
+            <p>Wir halten unsere Versprechen und liefern Autotransportlösungen, auf die sich unsere Kunden verlassen können. Pünktlichkeit und Professionalität stehen bei uns an erster Stelle.</p>
+        </div>
+        <div class="mission">
+            <h2>Kundenzufriedenheit</h2>
+            <p>Die Zufriedenheit unserer Kunden steht im Mittelpunkt unseres Handelns. Wir streben danach, ihre Bedürfnisse zu verstehen und ihnen maßgeschneiderte Transportlösungen anzubieten, die ihren Erwartungen entsprechen oder diese übertreffen.</p>
+        </div>
+        <div class="mission">
+            <h2>Sicherheit</h2>
+            <p>Sicherheit hat oberste Priorität bei allen unseren Transportdienstleistungen. Wir setzen strenge Sicherheitsstandards und -protokolle ein, um die sichere und unversehrte Lieferung der Fahrzeuge unserer Kunden zu gewährleisten.</p>
+        </div>
+        <div class="mission">
+            <h2>Exzellenz</h2>
+            <p>Wir streben kontinuierlich nach Exzellenz in allem, was wir tun. Durch ständige Verbesserung und Innovation streben wir danach, die besten Autotransportlösungen anzubieten und unsere Position als führender Anbieter in der Branche zu festigen.</p>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Kontaktieren Sie uns.</h2>
+        <button class="button">
+        <a href="form.html">JETZT KONTAKTIEREN</a>
+        </button>
+    </section>
+
+    <footer>
+        <div class="container">
+        <div class="K&S-Transport">
+            <h3>K&S Transport</h3>
+            <p>Industriestrasse 173a</p>
+            <p>8957 Spreitenbach</p>
+            <p>+41 76 412 98 97</p>
+            <p>info@ks-transport.ch</p>
+        </div>
+
+        <div class="Openings">
+            <h3>Unsere Öffnungszeiten</h3>
+            <p>Montag - Freitag</p>
+            <p>08.00 - 12.00</p>
+            <p>13.00 - 18.00</p>
+            <p>Samstag - Sonntag</p>
+            <p>Geschlossen</p>
+        </div>
+
+        <div class="Rights">
+            <a href="#"><small>AGB</small></a>
+            <a href="#"><small>Datenschutz</small></a>
+            <a href="#"><small>Impressum</small></a>
+            
+        </div>
+    </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }));
+    </script>
+    
+</body>
+</html>
